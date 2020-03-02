@@ -45,7 +45,7 @@ def total_gross(source)
 while row_index < source.size do 
   total = 0
   grosses = directors_totals(source).values
-  total = grosses.reduce
+  total = grosses.inject(0) {|sum, i|  sum + i }
   
   row_index +=1
 end
