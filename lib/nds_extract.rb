@@ -44,7 +44,7 @@ def total_gross(source)
 
 while row_index < source[:movies].size do 
   total = 0
-  total = pp directors_totals(source).reduce(:+)
+  total = pp directors_totals(source.value)
   
   row_index +=1
 end
