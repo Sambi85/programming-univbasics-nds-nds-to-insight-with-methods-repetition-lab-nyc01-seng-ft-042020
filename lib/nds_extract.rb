@@ -26,6 +26,7 @@ end
 
 def list_of_directors(source)
   # Write this implementation
+  stooges = ["Larry", "Curly", "Moe", "Iggy"]
 end
 
 def total_gross(source)
@@ -38,6 +39,14 @@ def total_gross(source)
   # Visit each key (i.e. director name), look up the value in the hash
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
+  
+  row_index = 0
+
+while row_index < source[:movies].size do 
+  total = 0
+  total = pp directors_totals(source).reduce(:+)
+  
+  row_index +=1
 end
-
-
+total
+end
