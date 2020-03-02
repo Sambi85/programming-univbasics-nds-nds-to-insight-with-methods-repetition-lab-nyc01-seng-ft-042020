@@ -44,7 +44,7 @@ def total_gross(source)
 
 while row_index < source.size do 
   total = 0
-  total = pp directors_totals(source).value
+  total = pp directors_totals(source).values
   
   row_index +=1
 end
